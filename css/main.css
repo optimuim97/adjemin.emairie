@@ -1,0 +1,192 @@
+:root{
+    /* --main : #026178; */
+    --main : #02688d;
+    --main-lighter: #96c1c5;
+    /* --main-light: #0198d2; */
+    --main-light: #01adfe;
+    /* --accent: #c9a707; */
+    --accent: #ffca08;
+    /* --grey: #c2d3ce; */
+    --gray: #e1e9eb;
+    /*  */
+    --border-radius : 3px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', serif;
+}
+
+.bg-main {
+    background-color: var(--main);
+    color: white !important;
+}
+.bg-gray {
+    background-color: var(--gray);
+}
+.main {
+    color: var(--main);
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
+h1.fat-title{
+    font-weight: 700 !important;
+}
+
+.nav-link{
+    display: inline-block;
+    color: var(--main);
+    font-weight: 700;
+    padding: 20px;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid var(--main-light);
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: var(--border-radius);
+}
+.btn-inline:hover {
+    color: var(--accent);
+}
+
+.btn-main{
+    background-color: var(--main);
+}
+.btn-accent{
+    background-color: var(--accent);
+}
+
+
+.btn-main-light{
+    background-color: var(--main-light);
+}
+
+/* .img-fluid{
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
+
+.w-100{
+    width: 100%;
+}
+
+/*  */
+nav {
+    position: relative;
+}
+#logo-mairie{
+    position: absolute;
+    z-index: 9;
+}
+
+/*  */
+#showcase {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.overlay{
+    position: relative;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+}
+
+.showcase-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white    ;
+    /* height: 50%;
+    width: 50%; */
+    text-align: center;
+}
+.showcase-text{
+    /* margin: 50px auto; */
+}
+
+#call-to-action-taxes{
+    /* height: 500px; */
+    background-color: var(--gray);
+}
+
+#call-to-action-taxes div{
+    width: 50%;
+    margin-right: auto;
+}
+
+.position-relative{
+    /* position: relative !important; */
+    min-height: 200px;
+}
+
+.img-display {
+    position: relative;
+    min-height: 200px;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-display.h-300p{
+    min-height: 300px;
+}
+.img-display.h-400p{
+    min-height: 400px;
+}
+
+.img-display .overlay + div {
+    color: white;
+    text-align: center;
+}
+
+.img-display-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col-md-6 .img-display .overlay{
+    position: absolute;
+}
+
+.hr {
+    border: .5px solid rgba(255, 255, 255, .4);
+    width: 100%;
+}
+
+.circle-icon-btn{
+    position: relative;
+    border: 2px solid var(--main-lighter);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+.circle-icon-btn img{
+    width: 12px !important;
+    height: auto !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
